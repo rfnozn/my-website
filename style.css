@@ -109,31 +109,41 @@ p, h1, h2, h3, h4, h5, h6 {
     gap: .5rem;
 }
 
-.navItem {
-    padding: 1rem 0;
-}
+/* .navItem {} */
 
 .navLink {
     color: #fff;
     text-decoration: none;
     padding: 1rem 1.5rem;
-    border-radius: 1000rem;
+    border-radius: 999rem;
+    box-shadow: 0px 1px 1px #000;
 }
 
-/* .linkedin {
+.navLink:hover,
+.navLink:focus {
+    opacity: 0.7;
+}
+
+.linkedin {
     background-color: #0A66C2;
+}
+
+/* .fa-linkedin-in {
+    background-color: #0A66C2;
+    padding: 1rem;
+    border-radius: 999rem;
 } */
 
-.in-icon {
-    background-color: #0A66C2;
-    padding: 1rem 1.5rem;
+.xing {
+    background-color: #0698A0;
 }
 
-/* .xing {
+/* .fa-xing {
     background-color: #0698A0;
+    padding: 2rem;
+    border-radius: 9999rem;
 } */
 
-.xing-icon {
-    background-color: #0698A0;
+.hero {
+    background-color: var(--dark-green);
 }
-
