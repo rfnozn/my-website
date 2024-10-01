@@ -11,6 +11,7 @@
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    font-family: 'Fester', sans-serif;
 }
 
 img, picture, video, canvas, svg {
@@ -40,5 +41,99 @@ p, h1, h2, h3, h4, h5, h6 {
     --anthracite: #36454F;
     --burgundy: #800020;
 
-    
+    /*  Font sizes and weights  */
+    --fs-lrg: 1.3125rem;
+    --fs-xlrg: 1.875rem;
+    --fs-xxlrg: 2.25rem;
+
+    --fw-light: 300;
+    --fw-semibold: 500;
+    --fw-bold: 700;
 }
+
+/*  VARIABLE FONT FACE  */
+
+@font-face {
+    font-family: 'BPdotsSquares';
+    src: url('vFonts/BPdotsSquares.woff2') format('woff2-variations');
+    font-weight: 0 1000;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DreamAvenue';
+    src: url('vFonts/DreamAvenue.woff2') format('woff2-variations');
+    font-weight: 0 1000;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fester';
+    src: url('vFonts/Fester.woff2') format('woff2-variations');
+    font-weight: 0 1000;
+    font-display: swap;
+}
+
+/* CSS styles */
+
+.banner {
+    background-color: var(--dark-green);
+    padding: 1rem 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    border: 2px solid yellow;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 18%;
+}
+
+.navList {
+    list-style-type: none;
+    gap: .5rem;
+}
+
+.navItem {
+    padding: 1rem 0;
+}
+
+.navLink {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    border-radius: 1000rem;
+}
+
+/* .linkedin {
+    background-color: #0A66C2;
+} */
+
+.in-icon {
+    background-color: #0A66C2;
+    padding: 1rem 1.5rem;
+}
+
+/* .xing {
+    background-color: #0698A0;
+} */
+
+.xing-icon {
+    background-color: #0698A0;
+}
+

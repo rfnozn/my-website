@@ -8,21 +8,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>irfanoezen.com</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
     <header>
-        
+
         <div class="banner">
-            <div class="logo">
-                <img src="img/irfanoezen-logo-1.png" alt="logo of irfanoezen.com"/>
+            <div class="container row">
+                <div class="logo">
+                    <img src="img/irfanoezen-logo-short.png" alt="logo of irfanoezen.com"/>
+                </div>
+                <nav class="navBar">
+                    <ul class="navList row">
+                        <li class="navItem">
+                            <a class="navLink linkedin" href="#">
+                                <i class="in-icon" data-feather="linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a class="navLink xing" href="#">
+                                <i class="xing-icon" data-feather="xing"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="navBar">
-                <ul class="navList">
-                    <li class="navItem"><a class="navLink" href="#">LinkedIn</a></li>
-                    <li class="navItem"><a class="navLink" href="#">Xing</a></li>
-                </ul>
-            </nav>
         </div>
 
         <div class="hero">
@@ -50,5 +61,6 @@
     </header>
 
     <script src="script.js"></script>
+    <script>feather.replace();</script>
 </body>
 </html>
