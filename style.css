@@ -42,9 +42,9 @@ p, h1, h2, h3, h4, h5, h6 {
     --burgundy: #800020;
 
     /*  Font sizes and weights  */
-    --fs-lrg: 1.3125rem;
-    --fs-xlrg: 1.875rem;
-    --fs-xxlrg: 2.25rem;
+    --fs-lrg: 1.3125rem; /* == 21px */
+    --fs-xlrg: 1.875rem; /* == 30px */
+    --fs-xxlrg: 2.75rem; /* == 44px */
 
     --fw-light: 300;
     --fw-semibold: 500;
@@ -52,13 +52,6 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /*  VARIABLE FONT FACE  */
-
-@font-face {
-    font-family: 'BPdotsSquares';
-    src: url('vFonts/BPdotsSquares.woff2') format('woff2-variations');
-    font-weight: 0 1000;
-    font-display: swap;
-}
 
 @font-face {
     font-family: 'DreamAvenue';
@@ -108,10 +101,10 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .navList {
     list-style-type: none;
-    padding: 2rem 0;
+    padding: 1rem 0;
     gap: .75rem;
 
-    /* border: 2px solid blue; */
+    /* border: 2px solid lightblue; */
 }
 
 /* .navItem {} */
@@ -133,21 +126,9 @@ p, h1, h2, h3, h4, h5, h6 {
     background-color: #0A66C2;
 }
 
-/* .fa-linkedin-in {
-    background-color: #0A66C2;
-    padding: 1rem;
-    border-radius: 999rem;
-} */
-
 .xing {
     background-color: #0698A0;
 }
-
-/* .fa-xing {
-    background-color: #0698A0;
-    padding: 2rem;
-    border-radius: 9999rem;
-} */
 
 .hero {
     background-color: var(--dark-green);
@@ -178,6 +159,7 @@ p, h1, h2, h3, h4, h5, h6 {
     font-style: italic;
     border-radius: 999rem;
     padding: .25rem 1rem;
+    margin-bottom: 1rem;
 }
 
 .profession {
@@ -185,6 +167,7 @@ p, h1, h2, h3, h4, h5, h6 {
     font-size: var(--fs-xxlrg);
     font-weight: 1000;
     color: var(--off-white);
+    line-height: 1;
 }
 
 .location {
@@ -229,4 +212,18 @@ p, h1, h2, h3, h4, h5, h6 {
     border-radius: 999rem;
     font-weight: var(--fw-bold);
     box-shadow: 0px 1px 1px #000;
+}
+
+.social__link {
+    opacity: 0.5;
+}
+
+.portfolio__link:hover,
+.portfolio__link:focus {
+    opacity: 0.7;
+}
+
+.social__link:hover,
+.social__link:focus {
+    opacity: 1;
 }
