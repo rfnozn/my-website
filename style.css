@@ -86,12 +86,14 @@ p, h1, h2, h3, h4, h5, h6 {
     max-width: 1200px;
     margin: 0 auto;
 
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
 }
 
 .col {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .row {
@@ -106,7 +108,10 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .navList {
     list-style-type: none;
-    gap: .5rem;
+    padding: 2rem 0;
+    gap: .75rem;
+
+    /* border: 2px solid blue; */
 }
 
 /* .navItem {} */
@@ -114,7 +119,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .navLink {
     color: #fff;
     text-decoration: none;
-    padding: 1rem 1.5rem;
+    padding: 1rem;
     border-radius: 999rem;
     box-shadow: 0px 1px 1px #000;
 }
@@ -146,4 +151,82 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .hero {
     background-color: var(--dark-green);
+    color: var(--off-white);
+
+}
+
+.hero__content {
+    align-items: center;
+}
+
+.author {
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.author-image img {
+    border-radius: 999rem;
+    border: solid 6px var(--off-white);
+}
+
+.author p {
+    background-color: var(--off-white);
+    color: var(--dark-green);
+    font-size: var(--fs-lrg);
+    font-weight: 1000;
+    font-style: italic;
+    border-radius: 999rem;
+    padding: .25rem 1rem;
+}
+
+.profession {
+    font-family: 'DreamAvenue';
+    font-size: var(--fs-xxlrg);
+    font-weight: 1000;
+    color: var(--off-white);
+}
+
+.location {
+    gap: .5rem;
+}
+
+.hero__links {
+    width: 100%;
+    gap: 1.5rem;
+    padding: 3rem 0;
+}
+
+.hero__links--list {
+    list-style-type: none;
+    width: 100%;
+}
+
+.portfolio, 
+.social {
+    gap: 1rem;
+    padding: 0;
+    justify-content: center;
+}
+
+.portfolio__link,
+.social__link {
+    color: var(--off-white);
+    text-decoration: none;
+}
+
+.github {
+    background-color: #171515;
+    padding: 1rem 1.5rem;
+    border-radius: 999rem;
+    font-weight: var(--fw-bold);
+    box-shadow: 0px 1px 1px #000;
+}
+
+.dribbble {
+    background-color: #EA4C89;
+    padding: 1rem 1.5rem;
+    border-radius: 999rem;
+    font-weight: var(--fw-bold);
+    box-shadow: 0px 1px 1px #000;
 }
