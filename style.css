@@ -36,9 +36,7 @@ p, h1, h2, h3, h4, h5, h6 {
 :root {
     /* COLOR PLATE */
     --dark-green: #114E46;
-    --royal-blue: #4169e1;
-    --off-white: #F5F5F5;
-    --anthracite: #36454F;
+    --white: #fff;
     --burgundy: #800020;
 
     /*  Font sizes and weights  */
@@ -110,7 +108,7 @@ p, h1, h2, h3, h4, h5, h6 {
 /* .navItem {} */
 
 .navLink {
-    color: #fff;
+    color: var(--white);
     text-decoration: none;
     padding: 1rem;
     border-radius: 999rem;
@@ -132,8 +130,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .hero {
     background-color: var(--dark-green);
-    color: var(--off-white);
-
+    color: var(--white);
 }
 
 .hero__content {
@@ -148,11 +145,11 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .author-image img {
     border-radius: 999rem;
-    border: solid 6px var(--off-white);
+    border: solid 3px var(--white);
 }
 
 .author p {
-    background-color: var(--off-white);
+    background-color: var(--white);
     color: var(--dark-green);
     font-size: var(--fs-lrg);
     font-weight: 1000;
@@ -166,7 +163,7 @@ p, h1, h2, h3, h4, h5, h6 {
     font-family: 'DreamAvenue';
     font-size: var(--fs-xxlrg);
     font-weight: 1000;
-    color: var(--off-white);
+    color: var(--white);
     line-height: 1;
 }
 
@@ -194,7 +191,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .portfolio__link,
 .social__link {
-    color: var(--off-white);
+    color: var(--white);
     text-decoration: none;
 }
 
@@ -227,3 +224,4 @@ p, h1, h2, h3, h4, h5, h6 {
 .social__link:focus {
     opacity: 1;
 }
+
