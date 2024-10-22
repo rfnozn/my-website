@@ -84,7 +84,7 @@ p, h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .row {
@@ -297,6 +297,19 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 2rem;
 }
 
+.services h3 {
+    color: var(--burgundy);
+    font-size: var(--fs-lrg);
+    margin-bottom: 0.25rem;
+}
+
+.services p {
+    margin-bottom: 0.25rem;
+}
+
+.services a {
+    text-decoration: none;
+}
 
 .services--img {
     width: 40%;
@@ -309,4 +322,94 @@ p, h1, h2, h3, h4, h5, h6 {
 .image {
     padding: 1rem;
     margin: 0 auto;
+}
+
+.developed {
+    background-color: var(--dark-green);
+    color: var(--white);
+    padding: 2rem 0;
+}
+
+.developed h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: var(--fs-xxlrg);
+    line-height: 1;
+    font-family: 'DreamAvenue';
+}
+
+.project {
+    background-color: var(--white);
+    color: var(--dark-green);
+    padding: 1rem 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 0px 1px 1px #000;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.project--image {
+    border-radius: 1.5rem;
+}
+
+.project--info {
+    gap: 0.25rem;
+    /* border: solid 2px #000; */
+}
+
+.project h3 {
+    color: var(--burgundy);
+    font-size: var(--fs-lrg);
+    font-weight: 1000;
+}
+
+.project p {
+    margin-bottom: 0.5rem;
+}
+
+.project--links {
+    /* border: solid 2px black; */
+    align-self: stretch;
+}
+
+.project--links a {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--dark-green);
+    border-radius: .5rem;
+    padding: 0.5rem 1rem;
+}
+
+.project--links a:hover,
+.project--links a:focus {
+    color: var(--dark-green);
+    background-color: var(--white);
+    border: solid 1px var(--dark-green);
+}
+
+.designed {
+    padding: 2rem 0;
+}
+
+.design {
+    margin-bottom: 2.5rem;
+}
+
+.designed h2 {
+    font-size: var(--fs-xxlrg);
+    color: var(--burgundy);
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'DreamAvenue';
+}
+
+.design__info {
+   gap: 0.3rem;
+}
+
+.design__info h3 {
+    color: var(--burgundy);
+    font-size: var(--fs-lrg);
+    font-weight: 1000;
 }
